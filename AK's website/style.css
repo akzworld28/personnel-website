@@ -78,6 +78,11 @@ ul>li:hover{
     display: flex;
     justify-content: space-evenly;
 }
+.about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 .about>.text1{
     width: 400px;
