@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url(./pics/rose.jpg);
+    background-repeat: no-repeat;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about>h1{
+    text-align: center;
+    color: #660404;
+    margin: 30px;
+}
+
+.about>p{
+    width: 600px;
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;
+}
+
+p>span{
+    font-weight: bold;
+}
+
+footer{
+    margin-top: auto;
+    margin-left: 83px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 1200px;
+    padding: 20px;
+    color: #660404;
+    text-align: center;
+    border: 3px solid black;
+}
+.footer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.footer>i{
+    font-size: 25px;
+    color: #080202;
+}
+.footer>a{
+    color: #080202;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer a:hover, .footer i:hover {
+    color: crimson;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .about>h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+        margin: 20px;
+    }
+
+    .about>p {
+        width: 90%; /* Increase width to 90% for better fit on smaller screens */
+        font-size: 20px; /* Reduce font size for mobile readability */
+        margin: 15px;
+    }
+
+    footer {
+        width: 100%; /* Make footer width 100% for mobile screens */
+        margin-left: 0; /* Remove left margin */
+        padding: 15px;
+    }
+
+    .footer>i {
+        font-size: 22px; /* Adjust icon size for mobile */
+    }
+
+    .footer>a {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about>h1 {
+        font-size: 1.2rem; /* Even smaller font size for very small screens */
+        margin: 10px;
+    }
+
+    .about>p {
+        font-size: 18px; /* Further reduce font size */
+        margin: 10px;
+        width: 100%; /* Use full width for text on very small screens */
+    }
+
+    footer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer>i {
+        font-size: 20px; /* Adjust icon size */
+    }
+
+    .footer>a {
+        font-size: 14px; /* Adjust text size */
+    }
+}

@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./pics/rose.jpg);
+    background-repeat: no-repeat;
+}
+
+nav{
+    height: 100px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+}
+
+h1>span{
+    color: crimson;
+    font-style: oblique;
+}
+
+.welcome>h1{
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.logo>img{
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    transition: all 2s;
+    box-shadow: 4px 4px whitesmoke;
+    margin-left: 10px;
+}
+
+.logo>img:hover{
+    scale: 1.3;
+}
+
+.list-items> ul {
+    display: flex;
+    color: darkgreen ;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px;
+    gap: 10px;
+}
+
+ul>li>a{
+    color: darkgreen;
+    text-decoration: none;
+}
+
+ul>li:hover{
+    color: #706f6f;
+}
+
+.about>.img2>img:hover{
+    scale: 1.1;
+}
+
+.img1>h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+    color: rgb(145, 114, 36);
+}
+
+.inner>.about{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about>.text1{
+    width: 400px;
+    height: 400px;
+    margin-top: 40px;
+    font-size: 30px;
+    color: darkred;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.about>.img2>img{
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: all 2s;
+    box-shadow: 6px 6px 6px black;
+}
+
+.inner{
+    margin-top: 30px;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welc{
+    border: 3px solid black;
+    display: flex;
+    width: 1200px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 80px;
+    border-radius: 10px;
+}
+.welc>h2{
+    text-align: center;
+    color: #660404;
+    margin: 40px;
+    font-size: 35px;
+}
+
+.welc>p{
+    text-align: center;
+    text-shadow: black;
+    width: 800px;
+    font-size: 25px;
+    margin: 30px;
+}
+
+footer>h4{
+    text-align: center;
+}
+
+footer> i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer> a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: auto;
+    margin-left: 83px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 1200px;
+    padding: 20px;
+    color: #660404;
+    text-align: center;
+    border: 3px solid black;
+}
+.footer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.footer>i{
+    font-size: 25px;
+    color: #080202;
+}
+.footer>a{
+    color: #080202;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer a:hover, .footer i:hover {
+    color: crimson;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 10px;
+    }
+
+    h1>span {
+        font-size: 1.5em;
+    }
+
+    .list-items> ul {
+        flex-direction: column;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .about>.text1 {
+        width: 90%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .welc {
+        width: 90%;
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .welc>h2 {
+        font-size: 28px;
+    }
+
+    .welc>p {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .footer>i {
+        font-size: 20px;
+    }
+
+    .footer>a {
+        font-size: 16px;
+    }
+
+    .inner>.about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about>.img2>img {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .logo>img {
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .list-items> ul {
+        font-size: 16px;
+    }
+
+    .welc>h2 {
+        font-size: 24px;
+    }
+
+    .welc>p {
+        font-size: 20px;
+    }
+
+    .footer>i {
+        font-size: 18px;
+    }
+
+    .footer>a {
+        font-size: 14px;
+    }
+
+    .logo>img {
+        width: 50px;
+        height: 50px;
+    }
+}
