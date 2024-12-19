@@ -1,125 +1,123 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
+body {
+    min-height: 100vh; /* Ensures full height on all screens */
     background-image: url(./pics/rose.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Ensures consistent background behavior */
 }
 
-.about{
+.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Adds padding for better spacing on smaller screens */
 }
 
-.about>h1{
+.about > h1 {
     text-align: center;
     color: #660404;
     margin: 30px;
+    font-size: 2rem; /* Relative font size for scalability */
 }
 
-.about>p{
-    width: 600px;
+.about > p {
+    max-width: 90%; /* Flexible width for mobile devices */
     text-align: center;
-    margin: 20px;
-    font-size: 25px;
+    margin: 20px auto;
+    font-size: 1.2rem; /* Scalable font size */
+    line-height: 1.5; /* Improved readability */
 }
 
-p>span{
+p > span {
     font-weight: bold;
 }
 
-footer{
+footer {
     margin-top: auto;
-    margin-left: 83px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     border-radius: 10px;
-    width: 1200px;
+    max-width: 90%; /* Dynamic width for responsiveness */
     padding: 20px;
     color: #660404;
     text-align: center;
     border: 3px solid black;
 }
-.footer{
+
+.footer {
     display: flex;
     gap: 10px;
     justify-content: center;
     margin-top: 20px;
-    
 }
-.footer>i{
-    font-size: 25px;
+
+.footer > i {
+    font-size: 1.5rem; /* Scaled font size */
     color: #080202;
 }
-.footer>a{
+
+.footer > a {
     color: #080202;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem; /* Scaled font size */
     transition: color 0.3s;
 }
 
-.footer a:hover, .footer i:hover {
+.footer a:hover,
+.footer i:hover {
     color: crimson;
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background-size: cover;
-    }
-
-    .about>h1 {
-        font-size: 1.5rem; /* Smaller font size for mobile */
+    .about > h1 {
+        font-size: 1.5rem;
         margin: 20px;
     }
 
-    .about>p {
-        width: 90%; /* Increase width to 90% for better fit on smaller screens */
-        font-size: 20px; /* Reduce font size for mobile readability */
-        margin: 15px;
+    .about > p {
+        font-size: 1rem; /* Smaller text for readability on mobile */
+        margin: 15px auto;
     }
 
     footer {
-        width: 100%; /* Make footer width 100% for mobile screens */
-        margin-left: 0; /* Remove left margin */
         padding: 15px;
     }
 
-    .footer>i {
-        font-size: 22px; /* Adjust icon size for mobile */
+    .footer > i {
+        font-size: 1.2rem;
     }
 
-    .footer>a {
-        font-size: 16px; /* Adjust font size for mobile */
+    .footer > a {
+        font-size: 0.9rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .about>h1 {
-        font-size: 1.2rem; /* Even smaller font size for very small screens */
+    .about > h1 {
+        font-size: 1.2rem;
         margin: 10px;
     }
 
-    .about>p {
-        font-size: 18px; /* Further reduce font size */
-        margin: 10px;
-        width: 100%; /* Use full width for text on very small screens */
+    .about > p {
+        font-size: 0.9rem;
+        margin: 10px auto;
     }
 
     footer {
-        width: 100%;
         padding: 10px;
     }
 
-    .footer>i {
-        font-size: 20px; /* Adjust icon size */
+    .footer > i {
+        font-size: 1rem;
     }
 
-    .footer>a {
-        font-size: 14px; /* Adjust text size */
+    .footer > a {
+        font-size: 0.8rem;
     }
 }
