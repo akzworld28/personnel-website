@@ -7,14 +7,14 @@
 body {
     background-image: url(./pics/rose.jpg);
     background-repeat: no-repeat;
-    background-size: cover; /* Ensure background covers the screen */
-    background-attachment: fixed; /* For a better visual effect */
+    background-size: cover; 
+    background-attachment: fixed; 
 }
 
 nav {
     height: auto;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for small screens */
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -32,7 +32,7 @@ h1 > span {
 
 .logo > img {
     border-radius: 50%;
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    transition: transform 0.3s ease; 
     box-shadow: 4px 4px whitesmoke;
     margin-left: 10px;
 }
@@ -74,8 +74,9 @@ ul > li:hover {
 
 .inner > .about {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap; /* Wrap content on smaller screens */
+    flex-wrap: wrap; 
     gap: 20px;
     text-align: center;
 }
@@ -97,12 +98,12 @@ ul > li:hover {
     border-radius: 10px;
     transition: transform 0.3s ease;
     box-shadow: 6px 6px 6px black;
-    max-width: 90%; /* Scale image for responsiveness */
+    max-width: 90%; 
 }
 
 .inner {
     margin-top: 20px;
-    overflow: hidden; /* Remove unnecessary scrollbars */
+    overflow: hidden; 
 }
 
 .welc {
@@ -114,7 +115,6 @@ ul > li:hover {
     margin: 20px auto;
     max-width: 90%;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.9); /* Add background for readability */
 }
 
 .welc > h2 {
